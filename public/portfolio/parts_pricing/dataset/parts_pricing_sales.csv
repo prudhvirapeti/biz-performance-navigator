@@ -1,0 +1,25 @@
+Date,PartID,PartName,Category,Region,Segment,UnitsSold,UnitPrice,Revenue
+2024-01-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,120,250,30000
+2024-01-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,80,255,20400
+2024-01-01,P-200,Filter Element,Filtration,North,Enterprise,200,45,9000
+2024-01-01,P-200,Filter Element,Filtration,West,SMB,140,47,6580
+2024-02-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,130,252,32760
+2024-02-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,88,257,22616
+2024-02-01,P-200,Filter Element,Filtration,North,Enterprise,210,46,9660
+2024-02-01,P-200,Filter Element,Filtration,West,SMB,150,47.5,7125
+2024-03-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,115,255,29325
+2024-03-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,92,258,23736
+2024-03-01,P-200,Filter Element,Filtration,North,Enterprise,220,46.5,10230
+2024-03-01,P-200,Filter Element,Filtration,West,SMB,155,48,7440
+2024-04-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,140,258,36120
+2024-04-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,96,260,24960
+2024-04-01,P-200,Filter Element,Filtration,North,Enterprise,215,47,10105
+2024-04-01,P-200,Filter Element,Filtration,West,SMB,160,48.5,7760
+2024-05-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,150,260,39000
+2024-05-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,102,262,26724
+2024-05-01,P-200,Filter Element,Filtration,North,Enterprise,225,47.5,10687.5
+2024-05-01,P-200,Filter Element,Filtration,West,SMB,170,49,8330
+2024-06-01,P-100,Hydraulic Pump,Hydraulics,North,Enterprise,145,262,37990
+2024-06-01,P-100,Hydraulic Pump,Hydraulics,West,SMB,98,265,25970
+2024-06-01,P-200,Filter Element,Filtration,North,Enterprise,230,48,11040
+2024-06-01,P-200,Filter Element,Filtration,West,SMB,165,49.5,8167.5

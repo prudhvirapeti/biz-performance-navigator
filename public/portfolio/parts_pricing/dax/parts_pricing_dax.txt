@@ -1,0 +1,25 @@
+-- DAX Measures (Parts Pricing & Sales)
+
+Date Table =
+ADDCOLUMNS(
+  CALENDAR(DATE(2023,1,1), DATE(2025,12,31)),
+  "Year", YEAR([Date]),
+  "Month", FORMAT([Date], "MMM"),
+  "YearMonth", FORMAT([Date], "YYYY-MM"),
+  "Month Number", MONTH([Date])
+)
+
+Total Revenue := SUM(Parts[Revenue])
+
+Units Sold := SUM(Parts[UnitsSold])
+
+Average Price := DIVIDE([Total Revenue], [Units Sold])
+
+Price Change % := 
+VAR CurrentPrice = AVERAGE(Parts[UnitPrice])
+VAR PrevPrice = CALCULATE(AVERAGE(Parts[UnitPrice]), DATEADD('Date Table'[Date], -1, MONTH))
+RETURN DIVIDE(CurrentPrice - PrevPrice, PrevPrice)
+
+Revenue LY := CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date Table'[Date]))
+
+Revenue YoY % := DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])

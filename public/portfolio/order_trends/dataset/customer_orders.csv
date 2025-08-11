@@ -1,0 +1,26 @@
+OrderID,CustomerID,CustomerName,Segment,Region,OrderDate,Revenue
+O-1001,C-001,Acme Manufacturing,Enterprise,North,2024-01-08,14500
+O-1002,C-002,Beta Supplies,SMB,West,2024-01-12,3200
+O-1003,C-003,Cobalt Tech,Midmarket,North,2024-01-19,7800
+O-1004,C-001,Acme Manufacturing,Enterprise,North,2024-02-03,16750
+O-1005,C-004,Delta Industries,SMB,West,2024-02-11,4200
+O-1006,C-005,Echo Parts,Midmarket,South,2024-02-18,6100
+O-1007,C-003,Cobalt Tech,Midmarket,North,2024-03-02,8300
+O-1008,C-006,Falcon Equip,Enterprise,East,2024-03-07,12900
+O-1009,C-002,Beta Supplies,SMB,West,2024-03-14,3500
+O-1010,C-007,Gamma Works,SMB,East,2024-03-21,2900
+O-1011,C-001,Acme Manufacturing,Enterprise,North,2024-04-05,15400
+O-1012,C-008,Helios Co,Midmarket,South,2024-04-12,5200
+O-1013,C-003,Cobalt Tech,Midmarket,North,2024-04-19,9100
+O-1014,C-006,Falcon Equip,Enterprise,East,2024-04-23,11800
+O-1015,C-002,Beta Supplies,SMB,West,2024-05-03,4100
+O-1016,C-009,Iota Hardware,SMB,North,2024-05-09,2800
+O-1017,C-004,Delta Industries,SMB,West,2024-05-15,5100
+O-1018,C-005,Echo Parts,Midmarket,South,2024-05-22,6400
+O-1019,C-001,Acme Manufacturing,Enterprise,North,2024-05-28,17500
+O-1020,C-006,Falcon Equip,Enterprise,East,2024-06-02,12100
+O-1021,C-007,Gamma Works,SMB,East,2024-06-07,3100
+O-1022,C-003,Cobalt Tech,Midmarket,North,2024-06-11,8800
+O-1023,C-010,Jupiter Tools,Midmarket,West,2024-06-15,5600
+O-1024,C-002,Beta Supplies,SMB,West,2024-06-19,3950
+O-1025,C-004,Delta Industries,SMB,West,2024-06-22,5400

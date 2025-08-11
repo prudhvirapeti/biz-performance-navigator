@@ -1,0 +1,19 @@
+-- DAX Measures (Customer Order Trends)
+
+Orders := DISTINCTCOUNT(Orders[OrderID])
+
+Customers := DISTINCTCOUNT(Orders[CustomerID])
+
+Avg Orders per Customer := DIVIDE([Orders], [Customers])
+
+Retained Customers % :=
+VAR CurrentCustomers = VALUES(Orders[CustomerID])
+VAR PrevOrders = CALCULATE([Orders], DATEADD('Date Table'[Date], -1, MONTH))
+VAR Retained = COUNTROWS(
+  FILTER(CurrentCustomers,
+    CALCULATE([Orders], DATEADD('Date Table'[Date], -1, MONTH)) > 0
+  )
+)
+RETURN DIVIDE(Retained, [Customers])
+
+Monthly Revenue := SUM(Orders[Revenue])

@@ -1,0 +1,15 @@
+-- DAX Measures (Financial KPI Tracker)
+
+Revenue := SUM(Financials[Revenue])
+
+COGS := SUM(Financials[COGS])
+
+Profit := [Revenue] - [COGS]
+
+Gross Margin % := DIVIDE([Profit], [Revenue])
+
+Revenue LY := CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date Table'[Date]))
+
+YoY Revenue % := DIVIDE([Revenue] - [Revenue LY], [Revenue LY])
+
+Profit by Category := SUMX(VALUES(Financials[Category]), [Profit])
