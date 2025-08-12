@@ -39,6 +39,7 @@ const Projects = () => {
                 <a href="/portfolio/parts_pricing/dataset/parts_pricing_sales.csv"><Button variant="outline">CSV</Button></a>
                 <a href="/portfolio/parts_pricing/sql/parts_pricing_transform.sql"><Button variant="outline">SQL</Button></a>
                 <a href="/portfolio/parts_pricing/dax/parts_pricing_dax.txt"><Button variant="outline">DAX</Button></a>
+                <a href="/portfolio/parts_pricing/pbix/parts_pricing_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
               </div>
             </div>
           </div>
@@ -65,6 +66,7 @@ const Projects = () => {
                 <a href="/portfolio/order_trends/dataset/customer_orders.csv"><Button variant="outline">CSV</Button></a>
                 <a href="/portfolio/order_trends/sql/customer_orders_transform.sql"><Button variant="outline">SQL</Button></a>
                 <a href="/portfolio/order_trends/dax/order_trends_dax.txt"><Button variant="outline">DAX</Button></a>
+                <a href="/portfolio/order_trends/pbix/order_trends_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
               </div>
             </div>
           </div>
@@ -91,6 +93,7 @@ const Projects = () => {
                 <a href="/portfolio/financial_kpis/dataset/financial_kpis.csv"><Button variant="outline">CSV</Button></a>
                 <a href="/portfolio/financial_kpis/sql/financial_kpis_transform.sql"><Button variant="outline">SQL</Button></a>
                 <a href="/portfolio/financial_kpis/dax/financial_kpis_dax.txt"><Button variant="outline">DAX</Button></a>
+                <a href="/portfolio/financial_kpis/pbix/financial_kpis_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
               </div>
             </div>
           </div>

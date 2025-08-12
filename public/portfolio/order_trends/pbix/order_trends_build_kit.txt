@@ -1,0 +1,35 @@
+Project: Customer Order Trends Dashboard – PBIX Build Kit
+
+Goal
+Segment customers, track repeat orders, and visualize sales trends with retention and cadence KPIs.
+
+Included assets (already in this portfolio):
+- CSV: /portfolio/order_trends/dataset/customer_orders.csv
+- SQL transform: /portfolio/order_trends/sql/customer_orders_transform.sql
+- DAX measures: /portfolio/order_trends/dax/order_trends_dax.txt
+
+Step-by-step (approx. 10–15 min):
+1) Data load
+   - Get Data > Text/CSV > customer_orders.csv
+   - Types: OrderDate (Date), Revenue (Decimal), others text. Rename to Orders.
+
+2) Optional: SQL logic in Power Query
+   - Based on customer_orders_transform.sql, compute monthly counts and IsRepeat.
+
+3) Model
+   - Create Date table and mark as Date table. Relate Date[Date] to Orders[OrderDate].
+
+4) Measures (DAX)
+   - Use order_trends_dax.txt: [Orders], [Customers], [Avg Orders per Customer], [Retained Customers %], [Monthly Revenue].
+
+5) Visuals
+   - KPI cards: Retention %, Avg Orders/Customer, Orders (Latest Month).
+   - Line chart: Monthly orders.
+   - Donut/Pie: Revenue by segment.
+   - Table: Top customers (orders, revenue).
+
+6) Formatting
+   - Percentages to one decimal, currency formatting.
+
+7) Publish
+   - Save PBIX and publish to Service; enable dashboards and share with stakeholders.

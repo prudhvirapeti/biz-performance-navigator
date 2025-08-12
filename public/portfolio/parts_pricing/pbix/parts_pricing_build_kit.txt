@@ -1,0 +1,38 @@
+Project: Parts Pricing & Sales Dashboard – PBIX Build Kit
+
+Goal
+Create a Power BI report that analyzes B2B parts pricing trends, top-selling parts, revenue impact, and regional sales.
+
+Included assets (already in this portfolio):
+- CSV: /portfolio/parts_pricing/dataset/parts_pricing_sales.csv
+- SQL transform: /portfolio/parts_pricing/sql/parts_pricing_transform.sql
+- DAX measures: /portfolio/parts_pricing/dax/parts_pricing_dax.txt
+
+Step-by-step (approx. 10–15 min):
+1) Data load
+   - Get Data > Text/CSV > parts_pricing_sales.csv
+   - Use Power Query to set column types (Date, text, numeric). Rename to Parts.
+
+2) Optional: Apply SQL logic in Power Query
+   - In Power Query, replicate logic from parts_pricing_transform.sql using Group By and Index/Shift (or native SQL if sourcing from a DB).
+   - Add PriceChangePct per the SQL example.
+
+3) Model
+   - Create a simple Date table (DAX) and mark as Date table.
+   - Relate Date[Date] to Parts[Date].
+
+4) Measures (DAX)
+   - Add measures from parts_pricing_dax.txt: [Total Revenue], [Units Sold], [Average Price], [Price Change %], etc.
+
+5) Visuals
+   - KPI cards: Total Revenue, Units Sold, Average Price, Price Change %.
+   - Line chart: Average price by month.
+   - Bar chart: Top parts by revenue.
+   - Bar chart: Revenue by region.
+
+6) Formatting
+   - Consistent currency/percent formats.
+   - Corporate theme with subtle accents.
+
+7) Publish
+   - Save as PBIX and Publish to Power BI Service (Workspace > New App).

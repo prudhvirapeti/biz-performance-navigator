@@ -1,0 +1,34 @@
+Project: Financial KPI Tracker – PBIX Build Kit
+
+Goal
+Monitor revenue, gross margin %, and growth by category with executive-ready visuals.
+
+Included assets (already in this portfolio):
+- CSV: /portfolio/financial_kpis/dataset/financial_kpis.csv
+- SQL transform: /portfolio/financial_kpis/sql/financial_kpis_transform.sql
+- DAX measures: /portfolio/financial_kpis/dax/financial_kpis_dax.txt
+
+Step-by-step (approx. 10–15 min):
+1) Data load
+   - Get Data > Text/CSV > financial_kpis.csv
+   - Types: Month (Date), Category (Text), Revenue/COGS (Decimal). Rename to Financials.
+
+2) Optional: Apply SQL transformation in Power Query per financial_kpis_transform.sql.
+
+3) Model
+   - Create a Date table and mark as Date table. Relate Date[Date] to Financials[Month].
+
+4) Measures (DAX)
+   - Derive [Total Revenue], [Profit] = [Revenue] - [COGS], [Gross Margin %], [Revenue Growth %], etc., using financial_kpis_dax.txt.
+
+5) Visuals
+   - KPI cards: Revenue, Profit, Gross Margin %, Revenue Growth % (MoM/YoY).
+   - Line chart: Monthly revenue.
+   - Bar chart: Profit by category.
+   - Optional: Waterfall for P&L components.
+
+6) Formatting
+   - Currency as $ with thousands separators; percentages to two decimals.
+
+7) Publish
+   - Save PBIX and publish to Power BI Service; set up workspace/app and permissions.

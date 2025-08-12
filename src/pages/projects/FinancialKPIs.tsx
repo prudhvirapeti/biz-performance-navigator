@@ -179,6 +179,7 @@ const FinancialKPIs = () => {
           <a href="/portfolio/financial_kpis/dataset/financial_kpis.csv"><Button>Download CSV</Button></a>
           <a href="/portfolio/financial_kpis/dax/financial_kpis_dax.txt"><Button variant="outline">DAX</Button></a>
           <a href="/portfolio/financial_kpis/sql/financial_kpis_transform.sql"><Button variant="outline">SQL</Button></a>
+          <a href="/portfolio/financial_kpis/pbix/financial_kpis_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
         </div>
       </section>
     </main>

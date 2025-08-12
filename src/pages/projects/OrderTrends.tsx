@@ -237,6 +237,7 @@ const OrderTrends = () => {
           <a href="/portfolio/order_trends/dataset/customer_orders.csv"><Button>Download CSV</Button></a>
           <a href="/portfolio/order_trends/dax/order_trends_dax.txt"><Button variant="outline">DAX</Button></a>
           <a href="/portfolio/order_trends/sql/customer_orders_transform.sql"><Button variant="outline">SQL</Button></a>
+          <a href="/portfolio/order_trends/pbix/order_trends_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
         </div>
       </section>
     </main>
