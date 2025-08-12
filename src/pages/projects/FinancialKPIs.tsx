@@ -13,7 +13,8 @@ import {
   Bar,
   Legend,
 } from "recharts";
-
+import financialKpisHero from "@/assets/financial-kpis-hero.jpg";
+ 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string }) => (
   <div className="mb-6">
     <h1 className="text-2xl md:text-3xl font-bold mb-2">{title}</h1>

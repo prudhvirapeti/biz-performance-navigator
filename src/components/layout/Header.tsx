@@ -7,11 +7,12 @@ const Header = () => {
       <div className="container mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
         <Link to="/" className="font-semibold tracking-tight">BI Portfolio</Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link to="/projects/parts-pricing" className="hover:text-primary transition-colors">Parts Pricing</Link>
-          <Link to="/projects/order-trends" className="hover:text-primary transition-colors">Order Trends</Link>
-          <Link to="/projects/financial-kpis" className="hover:text-primary transition-colors">Financial KPIs</Link>
+          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link to="/projects" className="hover:text-primary transition-colors">Projects</Link>
+          <Link to="/skills" className="hover:text-primary transition-colors">Skills</Link>
+          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
-        <a href="/portfolio/README.pdf"><Button size="sm" variant="subtle">Download</Button></a>
+        <a href="/portfolio/README.txt"><Button size="sm" variant="subtle">Download</Button></a>
       </div>
     </header>
   );

@@ -16,6 +16,7 @@ import {
   Pie,
   Cell,
 } from "recharts";
+import orderTrendsHero from "@/assets/order-trends-hero.jpg";
 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string }) => (
   <div className="mb-6">
@@ -141,8 +142,9 @@ const OrderTrends = () => {
       </Helmet>
 
       <section className="container mx-auto px-6 md:px-12 py-10">
+        <img src={orderTrendsHero} alt="Power BI dashboard mock: customer order trends and retention" className="w-full h-52 md:h-72 object-cover rounded-lg mb-6" loading="lazy" />
         <SectionHeader title="Customer Order Trends Dashboard" subtitle="Retention, cadence, and order value by customer segment" />
-
+ 
         <article className="prose prose-sm md:prose-base max-w-none dark:prose-invert">
           <h2>Business Problem</h2>
           <p>Understand how different customer segments contribute to orders and revenue over time, and identify opportunities to improve retention and repeat purchases.</p>
