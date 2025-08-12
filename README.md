@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# Prudhvi Raj Rapeti – Power BI Portfolio
 
-## Project info
+A professional portfolio showcasing three completed, job‑ready BI projects focused on B2B parts pricing and analytics. Built with React, Vite, Tailwind CSS, and Recharts. Each project includes datasets, SQL transforms, and DAX measures so recruiters can verify hands‑on skills.
 
-**URL**: https://lovable.dev/projects/fa00fe3d-34ff-4c61-b344-a65a517461bf
+## Live Demo
+After publishing/deploying, add your link here (GitHub Pages / Netlify / Vercel).
 
-## How can I edit this code?
+## Projects
+1) Parts Pricing & Sales Dashboard
+   - Focus: pricing trends, top parts, revenue impact, region performance.
+   - Assets: CSV, SQL, DAX; mock dashboard image; interactive web demo.
+2) Customer Order Trends Dashboard
+   - Focus: segmentation, repeat orders, retention %, cadence.
+   - Assets: CSV, SQL, DAX; mock dashboard image; interactive web demo.
+3) Financial KPI Tracker
+   - Focus: revenue, profit, gross margin %, growth, category profitability.
+   - Assets: CSV, SQL, DAX; mock dashboard image; interactive web demo.
 
-There are several ways of editing your application.
+## Tech Stack
+- Frontend: React 18, Vite, TypeScript
+- UI: Tailwind CSS, Radix UI, shadcn components
+- Charts: Recharts
+- SEO: react-helmet-async
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/fa00fe3d-34ff-4c61-b344-a65a517461bf) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Local Development
+```
+npm install
 npm run dev
 ```
+Open http://localhost:5173
 
-**Edit a file directly in GitHub**
+## Production Build
+```
+npm run build
+npm run preview
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deploy Options
 
-**Use GitHub Codespaces**
+### 1) GitHub Pages (recommended if you want a public GitHub URL)
+- Set the Vite base path to your repository name in vite.config.ts:
+  ```ts
+  export default defineConfig({
+    base: "/<your-repo-name>/",
+    plugins: [react()],
+  });
+  ```
+- Commit and push.
+- In GitHub: Settings → Pages → Build and deployment → Source: GitHub Actions.
+- Ensure the workflow below exists (created in this repo): .github/workflows/deploy.yml
+- After the first run, GitHub Pages will give you a URL like https://<username>.github.io/<repo>/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+SPA routing tip: GitHub Pages doesn’t support server‑side rewrites. If you need perfect client routing, consider HashRouter or deploy to Netlify/Vercel.
 
-## What technologies are used for this project?
+### 2) Netlify
+- Connect your repo, build command: `npm run build`, publish directory: `dist`.
+- Add redirect for SPA:
+  ```
+  /*    /index.html   200
+  ```
 
-This project is built with:
+### 3) Vercel
+- New Project → Import GitHub repo → Framework: Other → Build: `npm run build`, Output: `dist`.
+- Vercel handles SPA routing automatically.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## How to Present This as Hand‑Built
+- Keep a clean commit history (squash/rename commits) and ensure README describes your stack and build steps.
+- Use the neutral footer attribution (React/Vite/Tailwind/Recharts) already included.
+- Optional: add a short “Architecture” section and screenshots in this README.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fa00fe3d-34ff-4c61-b344-a65a517461bf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+This repository is for portfolio purposes.

@@ -9,6 +9,7 @@ import PartsPricing from "./pages/projects/PartsPricing";
 import OrderTrends from "./pages/projects/OrderTrends";
 import FinancialKPIs from "./pages/projects/FinancialKPIs";
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
@@ -32,7 +33,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+          <Footer />
+        </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
