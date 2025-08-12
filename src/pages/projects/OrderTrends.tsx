@@ -142,7 +142,7 @@ const OrderTrends = () => {
       </Helmet>
 
       <section className="container mx-auto px-6 md:px-12 py-10">
-        <img src={orderTrendsHero} alt="Power BI dashboard mock: customer order trends and retention" className="w-full h-52 md:h-72 object-cover rounded-lg mb-6" loading="lazy" />
+        <img src={orderTrendsHero} alt="Power BI dashboard mock: customer order trends and retention" className="w-full h-56 md:h-80 object-contain md:object-cover rounded-lg mb-6" loading="eager" decoding="async" />
         <SectionHeader title="Customer Order Trends Dashboard" subtitle="Retention, cadence, and order value by customer segment" />
  
         <article className="prose prose-sm md:prose-base max-w-none dark:prose-invert">
