@@ -40,7 +40,8 @@ const Contact = () => {
       </Helmet>
 
       <section className="container mx-auto px-6 md:px-12 py-10 max-w-2xl">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6">Contact</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2">Contact</h1>
+        <p className="text-sm text-muted-foreground mb-6">Prefer email? Reach me at <a href="mailto:prudhvirajrapeti@gmail.com" className="underline-offset-4 hover:underline">prudhvirajrapeti@gmail.com</a>.</p>
         <form onSubmit={onSubmit} className="space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             <div>

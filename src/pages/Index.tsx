@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>Power BI Portfolio – B2B Parts Pricing</title>
+        <title>Prudhvi Raj Rapeti – Power BI Portfolio</title>
         <meta name="description" content="Data Scientist/BI Developer with 2–3 years in Power BI, SQL, DAX, Dataflows, and publishing to Power BI Service." />
         <link rel="canonical" href={`${window.location.origin}/`} />
       </Helmet>
@@ -17,7 +17,8 @@ const Index = () => {
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-2xl">
-              <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Data Scientist / BI Developer Portfolio</h1>
+              <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">Prudhvi Raj Rapeti – Data Scientist / BI Developer</h1>
+              <p className="text-sm text-muted-foreground mb-4">Prudhvi Raj Rapeti • <a href="mailto:prudhvirajrapeti@gmail.com" className="underline-offset-4 hover:underline">prudhvirajrapeti@gmail.com</a></p>
               <p className="text-base md:text-lg text-muted-foreground mb-6">Three professional, customer-ready Power BI dashboards featuring Dataflows, DAX, SQL transformations, and B2B parts pricing analysis.</p>
               <div className="flex gap-3">
                 <Link to="/projects"><Button variant="hero" size="lg">View Projects</Button></Link>
