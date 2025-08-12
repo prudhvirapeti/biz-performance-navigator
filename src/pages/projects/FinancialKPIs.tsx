@@ -29,7 +29,7 @@ interface Row {
   COGS: number;
 }
 
-const csvUrl = "/portfolio/financial_kpis/dataset/financial_kpis.csv";
+const csvUrl = "portfolio/financial_kpis/dataset/financial_kpis.csv";
 
 const FinancialKPIs = () => {
   const [rows, setRows] = useState<Row[]>([]);
@@ -117,9 +117,9 @@ const FinancialKPIs = () => {
 
           <h2>Dataset</h2>
           <ul>
-            <li>CSV: <a href="/portfolio/financial_kpis/dataset/financial_kpis.csv">financial_kpis.csv</a></li>
-            <li>SQL: <a href="/portfolio/financial_kpis/sql/financial_kpis_transform.sql">financial_kpis_transform.sql</a></li>
-            <li>DAX: <a href="/portfolio/financial_kpis/dax/financial_kpis_dax.txt">financial_kpis_dax.txt</a></li>
+            <li>CSV: <a href="portfolio/financial_kpis/dataset/financial_kpis.csv">financial_kpis.csv</a></li>
+            <li>SQL: <a href="portfolio/financial_kpis/sql/financial_kpis_transform.sql">financial_kpis_transform.sql</a></li>
+            <li>DAX: <a href="portfolio/financial_kpis/dax/financial_kpis_dax.txt">financial_kpis_dax.txt</a></li>
           </ul>
 
           <h2>Key Insights</h2>
@@ -176,10 +176,10 @@ const FinancialKPIs = () => {
         )}
 
         <div className="mt-8 flex gap-3">
-          <a href="/portfolio/financial_kpis/dataset/financial_kpis.csv"><Button>Download CSV</Button></a>
-          <a href="/portfolio/financial_kpis/dax/financial_kpis_dax.txt"><Button variant="outline">DAX</Button></a>
-          <a href="/portfolio/financial_kpis/sql/financial_kpis_transform.sql"><Button variant="outline">SQL</Button></a>
-          <a href="/portfolio/financial_kpis/pbix/financial_kpis_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
+          <a href="portfolio/financial_kpis/dataset/financial_kpis.csv"><Button>Download CSV</Button></a>
+          <a href="portfolio/financial_kpis/dax/financial_kpis_dax.txt"><Button variant="outline">DAX</Button></a>
+          <a href="portfolio/financial_kpis/sql/financial_kpis_transform.sql"><Button variant="outline">SQL</Button></a>
+          <a href="portfolio/financial_kpis/pbix/financial_kpis_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
         </div>
       </section>
     </main>

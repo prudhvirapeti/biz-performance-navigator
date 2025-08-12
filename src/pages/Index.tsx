@@ -22,7 +22,7 @@ const Index = () => {
               <p className="text-base md:text-lg text-muted-foreground mb-6">Three professional, customer-ready Power BI dashboards featuring Dataflows, DAX, SQL transformations, and B2B parts pricing analysis.</p>
               <div className="flex gap-3">
                 <Link to="/projects"><Button variant="hero" size="lg">View Projects</Button></Link>
-                <a href="/portfolio/README.txt" className="inline-block"><Button variant="subtle" size="lg">Download Assets</Button></a>
+                <a href="portfolio/README.txt" className="inline-block"><Button variant="subtle" size="lg">Download Assets</Button></a>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Index = () => {
             <p className="text-sm text-muted-foreground mb-4">B2B parts pricing trends, volume, and regional performance with advanced DAX measures.</p>
             <div className="flex gap-3">
               <Link to="/projects/parts-pricing"><Button size="sm">Open</Button></Link>
-              <a href="/portfolio/parts_pricing/dataset/parts_pricing_sales.csv"><Button variant="outline" size="sm">CSV</Button></a>
+              <a href="portfolio/parts_pricing/dataset/parts_pricing_sales.csv"><Button variant="outline" size="sm">CSV</Button></a>
             </div>
           </article>
           <article className="rounded-lg border bg-card p-6 shadow-soft hover:shadow-elegant transition-all">
@@ -54,7 +54,7 @@ const Index = () => {
             <p className="text-sm text-muted-foreground mb-4">Retention and order cadence with drill-through to top customers.</p>
             <div className="flex gap-3">
               <Link to="/projects/order-trends"><Button size="sm">Open</Button></Link>
-              <a href="/portfolio/order_trends/dataset/customer_orders.csv"><Button variant="outline" size="sm">CSV</Button></a>
+              <a href="portfolio/order_trends/dataset/customer_orders.csv"><Button variant="outline" size="sm">CSV</Button></a>
             </div>
           </article>
           <article className="rounded-lg border bg-card p-6 shadow-soft hover:shadow-elegant transition-all">
@@ -62,7 +62,7 @@ const Index = () => {
             <p className="text-sm text-muted-foreground mb-4">P&L with gross margin %, YoY growth, and category profitability.</p>
             <div className="flex gap-3">
               <Link to="/projects/financial-kpis"><Button size="sm">Open</Button></Link>
-              <a href="/portfolio/financial_kpis/dataset/financial_kpis.csv"><Button variant="outline" size="sm">CSV</Button></a>
+              <a href="portfolio/financial_kpis/dataset/financial_kpis.csv"><Button variant="outline" size="sm">CSV</Button></a>
             </div>
           </article>
         </div>

@@ -34,7 +34,7 @@ interface PricingRow {
   Revenue: number;
 }
 
-const csvUrl = "/portfolio/parts_pricing/dataset/parts_pricing_sales.csv";
+const csvUrl = "portfolio/parts_pricing/dataset/parts_pricing_sales.csv";
 
 const PartsPricing = () => {
   const [rows, setRows] = useState<PricingRow[]>([]);
@@ -139,9 +139,9 @@ const PartsPricing = () => {
 
           <h2 className="text-lg font-semibold">Dataset</h2>
           <ul className="list-disc pl-6 space-y-1">
-            <li>CSV: <a href="/portfolio/parts_pricing/dataset/parts_pricing_sales.csv" className="text-primary underline-offset-4 hover:underline">parts_pricing_sales.csv</a></li>
-            <li>SQL: <a href="/portfolio/parts_pricing/sql/parts_pricing_transform.sql" className="text-primary underline-offset-4 hover:underline">parts_pricing_transform.sql</a></li>
-            <li>DAX: <a href="/portfolio/parts_pricing/dax/parts_pricing_dax.txt" className="text-primary underline-offset-4 hover:underline">parts_pricing_dax.txt</a></li>
+            <li>CSV: <a href="portfolio/parts_pricing/dataset/parts_pricing_sales.csv" className="text-primary underline-offset-4 hover:underline">parts_pricing_sales.csv</a></li>
+            <li>SQL: <a href="portfolio/parts_pricing/sql/parts_pricing_transform.sql" className="text-primary underline-offset-4 hover:underline">parts_pricing_transform.sql</a></li>
+            <li>DAX: <a href="portfolio/parts_pricing/dax/parts_pricing_dax.txt" className="text-primary underline-offset-4 hover:underline">parts_pricing_dax.txt</a></li>
             <li>Python (optional): <a href="/portfolio/parts_pricing/python/parts_pricing_cleaning.py" className="text-primary underline-offset-4 hover:underline">parts_pricing_cleaning.py</a></li>
           </ul>
 
@@ -215,10 +215,10 @@ const PartsPricing = () => {
         )}
 
         <div className="mt-8 flex gap-3">
-          <a href="/portfolio/parts_pricing/dataset/parts_pricing_sales.csv"><Button>Download CSV</Button></a>
-          <a href="/portfolio/parts_pricing/dax/parts_pricing_dax.txt"><Button variant="outline">DAX</Button></a>
-          <a href="/portfolio/parts_pricing/sql/parts_pricing_transform.sql"><Button variant="outline">SQL</Button></a>
-          <a href="/portfolio/parts_pricing/pbix/parts_pricing_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
+          <a href="portfolio/parts_pricing/dataset/parts_pricing_sales.csv"><Button>Download CSV</Button></a>
+          <a href="portfolio/parts_pricing/dax/parts_pricing_dax.txt"><Button variant="outline">DAX</Button></a>
+          <a href="portfolio/parts_pricing/sql/parts_pricing_transform.sql"><Button variant="outline">SQL</Button></a>
+          <a href="portfolio/parts_pricing/pbix/parts_pricing_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
         </div>
       </section>
     </main>

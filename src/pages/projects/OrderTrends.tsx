@@ -35,7 +35,7 @@ interface OrderRow {
   Revenue: number;
 }
 
-const csvUrl = "/portfolio/order_trends/dataset/customer_orders.csv";
+const csvUrl = "portfolio/order_trends/dataset/customer_orders.csv";
 
 const COLORS = [
   "hsl(var(--primary))",
@@ -151,9 +151,9 @@ const OrderTrends = () => {
 
           <h2>Dataset</h2>
           <ul>
-            <li>CSV: <a href="/portfolio/order_trends/dataset/customer_orders.csv">customer_orders.csv</a></li>
-            <li>SQL: <a href="/portfolio/order_trends/sql/customer_orders_transform.sql">customer_orders_transform.sql</a></li>
-            <li>DAX: <a href="/portfolio/order_trends/dax/order_trends_dax.txt">order_trends_dax.txt</a></li>
+            <li>CSV: <a href="portfolio/order_trends/dataset/customer_orders.csv">customer_orders.csv</a></li>
+            <li>SQL: <a href="portfolio/order_trends/sql/customer_orders_transform.sql">customer_orders_transform.sql</a></li>
+            <li>DAX: <a href="portfolio/order_trends/dax/order_trends_dax.txt">order_trends_dax.txt</a></li>
           </ul>
 
           <h2>Key Insights</h2>
@@ -234,10 +234,10 @@ const OrderTrends = () => {
         )}
 
         <div className="mt-8 flex gap-3">
-          <a href="/portfolio/order_trends/dataset/customer_orders.csv"><Button>Download CSV</Button></a>
-          <a href="/portfolio/order_trends/dax/order_trends_dax.txt"><Button variant="outline">DAX</Button></a>
-          <a href="/portfolio/order_trends/sql/customer_orders_transform.sql"><Button variant="outline">SQL</Button></a>
-          <a href="/portfolio/order_trends/pbix/order_trends_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
+          <a href="portfolio/order_trends/dataset/customer_orders.csv"><Button>Download CSV</Button></a>
+          <a href="portfolio/order_trends/dax/order_trends_dax.txt"><Button variant="outline">DAX</Button></a>
+          <a href="portfolio/order_trends/sql/customer_orders_transform.sql"><Button variant="outline">SQL</Button></a>
+          <a href="portfolio/order_trends/pbix/order_trends_build_kit.txt"><Button variant="outline">PBIX Build Kit</Button></a>
         </div>
       </section>
     </main>
